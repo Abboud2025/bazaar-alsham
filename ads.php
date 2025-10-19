@@ -11,6 +11,7 @@ $db = connectDB();
     <meta charset="UTF-8">
     <title>الإعلانات - بازار الشام</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -84,6 +85,57 @@ $db = connectDB();
                         </div>
                     </div>
                 </div>
+
+                <!-- إعلان 4 -->
+                <div class="ad-card">
+                    <div class="ad-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="ad-content">
+                        <h3>لابتوب ديل جديد</h3>
+                        <p class="ad-price">800,000 ل.س</p>
+                        <p class="ad-location"><i class="fas fa-map-marker-alt"></i> حمص</p>
+                        <p class="ad-description">لابتوب ديل core i7، ذاكرة 16GB، شاشة 15 بوصة</p>
+                        <div class="ad-meta">
+                            <span>قبل يوم</span>
+                            <span>مشاهدات: 89</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- إعلان 5 -->
+                <div class="ad-card">
+                    <div class="ad-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="ad-content">
+                        <h3>ملابس أطفال</h3>
+                        <p class="ad-price">25,000 ل.س</p>
+                        <p class="ad-location"><i class="fas fa-map-marker-alt"></i> طرطوس</p>
+                        <p class="ad-description">ملابس أطفال جديدة بمقاسات مختلفة، جودة عالية</p>
+                        <div class="ad-meta">
+                            <span>قبل يومين</span>
+                            <span>مشاهدات: 34</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- إعلان 6 -->
+                <div class="ad-card">
+                    <div class="ad-image">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="ad-content">
+                        <h3>أثاث منزلي</h3>
+                        <p class="ad-price">450,000 ل.س</p>
+                        <p class="ad-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
+                        <p class="ad-description">طقم كنب جديد، 3 قطع، لون بيج، ضمان سنة</p>
+                        <div class="ad-meta">
+                            <span>قبل 3 أيام</span>
+                            <span>مشاهدات: 56</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -91,7 +143,18 @@ $db = connectDB();
     <footer class="footer">
         <div class="container">
             <p>✨ بازار الشام - سوق سورية الإلكتروني</p>
+            <p>📞 للتواصل: info@bazaar-alsham.com</p>
         </div>
     </footer>
+
+    <script>
+    // إضافة تفاعل بسيط
+    document.querySelectorAll('.ad-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const title = this.querySelector('h3').textContent;
+            alert('تفاصيل الإعلان: ' + title + '\n\nسيتم عرض التفاصيل الكاملة في الإصدار القادم!');
+        });
+    });
+    </script>
 </body>
 </html>

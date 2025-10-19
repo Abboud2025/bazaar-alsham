@@ -194,3 +194,89 @@ body {
     margin-top: 3rem;
     color: #7f8c8d;
 }
+/* تصميم صفحة الإعلانات */
+.page-header {
+    text-align: center;
+    margin: 2rem 0;
+    color: #2c3e50;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.ad-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.ad-card:hover {
+    transform: translateY(-5px);
+}
+
+.ad-image {
+    height: 150px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.ad-content {
+    padding: 1.5rem;
+}
+
+.ad-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.ad-price {
+    color: #e74c3c;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.ad-location {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.ad-location i {
+    margin-left: 5px;
+}
+
+.ad-description {
+    color: #5d6d7e;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.ad-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #95a5a6;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ecf0f1;
+}
+
+.nav a.active {
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+}

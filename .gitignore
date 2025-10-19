@@ -1,0 +1,22 @@
+# ملفات البيئة
+.env
+config/local.php
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# السجلات
+*.log
+
+# المرفوعات
+assets/uploads/
+*.tmp
+
+# الاعتمادات
+vendor/
+node_modules/
+
+# النسخ الاحتياطي
+*.sql.bak
+*.backup
